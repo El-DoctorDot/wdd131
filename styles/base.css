@@ -107,7 +107,7 @@ section h1{
     border-radius: 20px;
     text-align: justify;
 }
-.card2 h4{
+.card2 h3{
     text-align: center;
     border-radius: 1px;
     background-color: var(--color-primary);
@@ -161,7 +161,7 @@ section h1{
     margin-bottom: 50px;
 }
 
-.brasil h3 {
+.brasil h2 {
     text-align: center;
     margin-bottom: 1rem;
     padding-bottom: 50px;
