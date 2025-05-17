@@ -1,0 +1,36 @@
+@media screen and (min-width: 720px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main div {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin: 0 auto;
+    }
+
+   .navigation {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        position: static;
+        background-color: transparent;
+        width: auto;
+    }
+
+    .navigation li {
+        display: inline-block; 
+        padding: 1rem;
+    }
+
+    .navigation a {
+        display: block; 
+        text-decoration: none;
+        color: var(--color-accent);
+    }
+
+    #menu {
+        display: none;
+    }
+}
