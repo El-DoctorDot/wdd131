@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 131 - Favorite Place</title>
+
+    <meta name="description" content="Favorite place around the world.">
+    <meta name="author" content="Sam Guedes">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Paraíba</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/beach-736.webp" alt="Beach in Brasil" class="hero-image" srcset="images/beach-480.webp 480w, images/beach-736.webp 736w" 
+            sizes="(max-width: 600px) 480px, 736px">
+
+            <table class="Data">
+                <caption>Data</caption>
+                <tbody>
+                    <tr>
+                        <td>Area:</td>
+                        <td>210,044 km&sup2;</td>
+                    </tr>
+                    <tr>
+                        <td>Population:</td>
+                        <td>833,932</td>
+                    </tr>
+                    <tr>
+                        <td>Capital:</td>
+                        <td>João Pessoa</td>
+                    </tr>
+                    <tr>
+                        <td>Languages:</td>
+                        <td>Portuguese</td>
+                    </tr>
+                    <tr>
+                        <td>Currency:</td>
+                        <td>Real</td>
+                    </tr>
+                    <tr>
+                        <td>Time Zone:</td>
+                        <td> GMT-3 (UTC-3)</td>
+                    </tr>
+                    <tr>
+                        <td>Calling Code:</td>
+                        <td>+83</td>
+                    </tr>
+                    <tr>
+                        <td>Internet TLD:</td>
+                        <td>.br</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <section class="weather-container">
+                <h2 class="weather-caption">Weather</h2>
+                <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+                
+                <table class="weather">
+                    <tbody>
+                        <tr>
+                            <td>Temperature:</td>
+                            <td>28&deg;C</td>
+                        </tr>
+                        <tr>
+                            <td>Condition:</td>
+                            <td>Sunny</td>
+                        </tr>
+                        <tr>
+                            <td>Wind:</td>
+                            <td>15 km/h</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Chill:</td>
+                            <td id="windchill">--</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Sam Guedes | Brazil</p>
+
+        <p><span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>

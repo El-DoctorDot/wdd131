@@ -1,0 +1,116 @@
+:root{
+    --color-primary: #023E8A;
+    --color-secondary: #0077B6;
+    --color-accent: white;
+    --color-text: black;
+}
+
+.roboto-uniquifier {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-accent);
+}
+
+header{
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+    padding: 1.5rem;
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+}
+
+main{
+    max-width: 2000px;
+}
+
+.hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-bottom: 10px solid var(--color-primary);
+  border-top: 32px solid var(--color-secondary);
+}
+.Data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+.Data caption{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+}
+.Data tr{
+    color: var(--color-text);
+    font-size: 16px;
+    text-align: center;
+}
+tbody{
+    padding: 1.5rem;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.weather-caption {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+    text-align: center;
+}
+
+.weather-icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather td {
+    font-size: 16px;
+    color: var(--color-text);
+    padding: 4px 8px;
+}
+footer{
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 20px;
+    color: var(--color-accent);
+    background-color: var(--color-primary);
+    margin-top: 20px;
+    padding: 1rem;
+}
+#lastModified {
+    font-size: 12px;
+}
