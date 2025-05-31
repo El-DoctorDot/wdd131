@@ -1,0 +1,164 @@
+:root{
+    --color-primary: rgb(88, 5, 88);
+    --color-secondary: black;
+    --color-accent: white;
+    --color-text: black;
+}
+
+.roboto-uniquifier {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header,
+footer,
+main,
+main div {
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+header,
+footer {
+    color: var(--color-accent);
+    background-color: var(--color-primary);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+main div {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(100%, 1fr));
+    place-items: center;
+    grid-gap: 1rem;
+    width: auto;
+}
+
+.picture figure {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.picture figure img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    object-fit: cover;
+}
+
+.picture figure h3 {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.picture figure p {
+    margin: 2px 0;
+    font-size: 0.9rem;
+    color: #333;
+    text-align: center;
+}
+
+
+#menu {
+    position: relative;
+    z-index: 1100;
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+
+.open li {
+    display: flex;
+    list-style: none;
+    margin: auto;
+    flex-direction: column;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+li{
+    display: none;
+}
+
+.navigation a {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-accent);
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+#lastmodified {
+    font-size: 12px;
+}
+
+.navigation {
+    display: flex;
+    position: absolute; 
+    top: 30px; 
+    left: 0;
+    width: 100%;
+    background-color: var(--color-primary);
+    z-index: 1000; 
+    flex-direction: column;
+}
+
+.main-shifted {
+  margin-top: 120px;
+  transition: margin-top 0.3s ease;
+}
+
+.navigation.open {
+    display: flex;
+}
