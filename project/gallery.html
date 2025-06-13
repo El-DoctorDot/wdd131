@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery - LuxuryCars</title>
+
+    <meta name="description" content="Explore our exclusive luxury car gallery with stunning images, technical details and iconic brands.">
+    <meta name="author" content="Sam Guedes">
+
+    <link rel="stylesheet" href="styles/gallery-styles.css">
+
+    <script src="scripts/gallery-script.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">LuxuryCars</h1>
+                <nav class="nav">
+                    <a href="blog.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="favorites.html">Favorites</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="gallery-main">
+        <div class="container">
+            <h2 class="page-title">Car Gallery</h2>
+            
+            
+            <div class="advanced-filters">
+                <div class="filter-group">
+                    <label for="sort-select">Sort by:</label>
+                    <select id="sort-select">
+                        <option value="name">Name</option>
+                        <option value="price-asc">Price (Lowest to Highest)</option>
+                        <option value="price-desc">Price (Highest to Lowest)</option>
+                        <option value="rating">Rating</option>
+                        <option value="brand">Brands</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="search-gallery">Seach cars:</label>
+                    <input type="text" id="search-gallery" placeholder="Enter name or brand...">
+                </div>
+                
+                <div class="filter-group">
+                    <label for="brand-gallery">Brand:</label>
+                    <select id="brand-gallery">
+                        <option value="all">All Brands</option>
+                    </select>
+                </div>
+                
+                <button id="clear-filters" class="btn-clear">Clear Filters</button>
+            </div>
+
+            
+            <div class="gallery-grid" id="gallery-grid"></div>
+
+            
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </main>
+
+    <script src="gallery-script.js"></script>
+</body>
+</html>

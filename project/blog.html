@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LuxuryCars - Luxury Car Blog</title>
+
+    <meta name="description" content="Explore the world of luxury and sports cars with in-depth reviews, specifications, and the latest news.">
+    <meta name="author" content="Sam Guedes">
+
+    <link rel="stylesheet" href="styles/blog-styles.css">
+
+    <script src="scripts/blog-scripts.js" defer></script>
+
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">LuxuryCars</h1>
+                <nav class="nav">
+                    <a href="blog.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="favorites.html">Favorites</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Luxury and Sports Cars</h2>
+                <p class="hero-description">
+                    Discover the world's most exclusive and powerful automobiles.
+                    From classic luxury to cutting-edge supercars.
+                </p>
+                <button class="btn-primary">Explore Collection</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="featured-cars">
+        <div class="container">
+            <h3 class="section-title">Featured Models</h3>
+            <div class="cars-grid" id="featured-cars-grid"></div>
+        </div>
+    </section>
+
+    
+    <section class="search-section">
+        <div class="container">
+            <h3 class="section-title">Find Your Dream Car</h3>
+            <div class="search-filters">
+                <div class="search-input">
+                    <input type="text" id="search" placeholder="Search for cars...">
+                </div>
+                <select id="brand-filter">
+                    <option value="all">All Brands</option>
+                </select>
+                <select id="price-filter">
+                    <option value="all">All Prices</option>
+                    <option value="0-200000">Under $200K</option>
+                    <option value="200000-500000">$200K - $500K</option>
+                    <option value="500000-1000000">$500K - $1M</option>
+                    <option value="1000000">Over $1M</option>
+                </select>
+                <button class="btn-filter">Advanced Filters</button>
+            </div>
+            <div class="cars-grid" id="search-results-grid">
+                
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">LuxuryCars</div>
+                <p class="footer-description">
+                    Your premium destination for luxury and sports car reviews, specs and insights.
+                </p>
+                <nav class="footer-nav">
+                    <a href="blog.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="favorites.html">Favorites</a>
+                </nav>
+
+                <p>&copy; <span id="currentyear"></span> | Sam Guedes | Brazil</p>
+                <p><span id="lastmodified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/blog-scripts.js"></script>
+</body>
+</html>

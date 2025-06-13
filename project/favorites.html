@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Favoritos - LuxuryCars</title>
+
+    <meta name="description" content="View your favorite luxury car list, compare models and explore more in the LuxuryCars gallery">
+    <meta name="author" content="Sam Guedes">
+
+    <link rel="stylesheet" href="styles/favorites-styles.css">
+
+    <script src="scripts/favorites-script.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">LuxuryCars</h1>
+                <nav class="nav">
+                    <a href="blog.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="favorites.html">Favorites</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="favorites-main">
+        <div class="container">
+            <div class="favorites-header">
+                <h2 class="page-title">My Favorite Cars</h2>
+                <div class="favorites-stats">
+                    <span id="favorites-count">0 cars saved</span>
+                    <button id="clear-all-favorites" class="btn-clear-all">Clear All</button>
+                </div>
+            </div>
+
+            <div class="favorites-content">
+                <div class="empty-state" id="empty-state">
+                    <div class="empty-icon">💔</div>
+                    <h3>No favorites yet</h3>
+                    <p>Explore our gallery and add your dream cars to your favorites!</p>
+                    <a href="gallery.html" class="btn-explore">Explore Gallery</a>
+                </div>
+
+                <div class="favorites-grid" id="favorites-grid"></div>
+            </div>
+
+            
+            <div class="comparison-modal" id="comparison-modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Comparar Carros</h3>
+                        <button class="modal-close" id="modal-close">×</button>
+                    </div>
+                    <div class="comparison-content" id="comparison-content"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="favorites-script.js"></script>
+</body>
+</html>
