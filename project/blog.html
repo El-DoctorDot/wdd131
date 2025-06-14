@@ -9,9 +9,14 @@
     <meta name="description" content="Explore the world of luxury and sports cars with in-depth reviews, specifications, and the latest news.">
     <meta name="author" content="Sam Guedes">
 
-    <link rel="stylesheet" href="styles/blog-styles.css">
+    <link rel="stylesheet" href="styles/blog.css">
+    <link rel="stylesheet" href="styles/blog-large.css">
 
-    <script src="scripts/blog-scripts.js" defer></script>
+    <link rel="preload" as="image" href="images/aventadorsvj.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="images/ferrarif8.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="images/mercedes.jpg" fetchpriority="high">
+
+    <script src="scripts/blog.js" defer></script>
 
 </head>
 <body>
@@ -39,7 +44,7 @@
                     Discover the world's most exclusive and powerful automobiles.
                     From classic luxury to cutting-edge supercars.
                 </p>
-                <button class="btn-primary">Explore Collection</button>
+                <button class="btn-primary" id="explore-collection">Explore Collection</button>
             </div>
         </div>
     </section>
@@ -97,7 +102,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="scripts/blog-scripts.js"></script>
 </body>
 </html>
